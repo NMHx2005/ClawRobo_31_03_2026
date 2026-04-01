@@ -1,0 +1,244 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1040px;
+  min-height: 87px;
+  margin: 0 auto;
+  padding: 24px;
+  gap: 60px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.nav-logo {
+  width: 167px;
+  height: 39px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-center-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #263239;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.75;
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.nav-cta-button {
+  width: 142px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(95deg, #006c4d 0%, #48d19f 100%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-cta-button:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.nav-menu-toggle,
+.nav-mobile-panel {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .navigation {
+    padding: 18px;
+    gap: 28px;
+  }
+
+  .nav-center-links {
+    gap: 24px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    min-height: unset;
+    gap: 14px;
+    padding: 14px 0;
+    background: transparent;
+    backdrop-filter: none;
+  }
+
+  .nav-logo {
+    width: 146px;
+    height: 34px;
+  }
+
+  .nav-center-links {
+    flex: 1;
+    justify-content: center;
+    gap: 16px;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav-center-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-cta-button {
+    width: 126px;
+    height: 36px;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    width: 132px;
+    height: 30px;
+  }
+
+  .nav-center-links {
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+    padding-bottom: 2px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navigation {
+    position: relative;
+    padding: 10px 0;
+    min-height: 64px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .nav-logo {
+    width: 132px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .nav-desktop-links,
+  .nav-cta-button {
+    display: none;
+  }
+
+  .nav-menu-toggle {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    background: #ffffff;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .nav-menu-toggle span {
+    width: 18px;
+    height: 2px;
+    background: #263239;
+    transition: 0.2s ease;
+  }
+
+  .navigation.menu-open .nav-menu-toggle span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .navigation.menu-open .nav-menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navigation.menu-open .nav-menu-toggle span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .nav-mobile-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    left: 0;
+    z-index: 50;
+    border: 1px solid #d7d7d7;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .navigation.menu-open .nav-mobile-panel {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-mobile-panel .nav-link {
+    font-size: 14px;
+    padding: 8px 4px;
+  }
+
+  .nav-mobile-cta {
+    display: inline-flex !important;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 0 12px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg, #006c4d 0%, #48d19f 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .nav-mobile-cta:hover {
+    transform: none;
+    opacity: 1;
+  }
+}
