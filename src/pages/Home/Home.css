@@ -168,16 +168,34 @@
 
 .home-actions {
   display: flex;
+  width: 100%;
+  max-width: 458px;
+  height: 48px;
   gap: 12px;
+}
+
+.home-actions button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.7px;
+  font-style: bold;
 }
 
 .btn-primary,
 .btn-secondary {
+  width: 223px;
   height: 48px;
   border-radius: 8px;
-  padding: 0 24px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-size: 16px;
-  font-weight: 600;
+  line-height: 20px;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -1042,6 +1060,7 @@
 
   .home-actions {
     flex-direction: column;
+    height: auto;
   }
 
   .btn-primary,
