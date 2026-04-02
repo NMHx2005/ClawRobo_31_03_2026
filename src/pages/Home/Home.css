@@ -373,24 +373,29 @@
 }
 
 .stack-card h3 {
-  font-size: 32px;
-  line-height: 1;
+  font-size: 24px;
+  line-height: 32px;
   color: #546067;
   margin-bottom: 4px;
+  font-weight: 700;
+  letter-spacing: -1.2px;
 }
 
 .stack-card h4 {
-  font-size: 22px;
-  line-height: 1;
+  font-size: 16px;
+  line-height: 22px;
   color: #006c4d;
   margin-bottom: 24px;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .stack-card p {
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 22px;
   color: #3d4a43;
+  font-family: 'Inter', sans-serif;
+  font-style: regular;
 }
 
 .stack-image-wrap {
@@ -743,15 +748,20 @@
   }
 
   .stack-card h3 {
-    font-size: 28px;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: -1px;
   }
 
   .stack-card h4 {
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 18px;
   }
 
   .stack-card p {
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 21px;
   }
 
   .cta-copy h2 {
@@ -873,6 +883,23 @@
 
   .stack-card {
     min-height: 0;
+  }
+
+  .stack-card h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.8px;
+  }
+
+  .stack-card h4 {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 14px;
+  }
+
+  .stack-card p {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .cta-section {
@@ -1091,17 +1118,20 @@
   }
 
   .stack-card h3 {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
   }
 
   .stack-card h4 {
-    font-size: 16px;
-    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 10px;
   }
 
   .stack-card p {
-    font-size: 15px;
-    line-height: 1.45;
+    font-size: 13px;
+    line-height: 18px;
   }
 
   .stack-image-wrap img {
@@ -1239,6 +1269,22 @@
 
   .home-title {
     font-size: 34px;
+  }
+
+  .stack-card h3 {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .stack-card h4 {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .stack-card p {
+    font-size: 12px;
+    line-height: 17px;
   }
 
   .contact-left h2 {
