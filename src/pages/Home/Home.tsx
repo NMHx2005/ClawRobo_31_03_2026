@@ -255,7 +255,7 @@ const Home = () => {
             <a href="#">Community</a>
           </nav>
 
-          <p className="footer-copy">© 2024 ClawRobo Precision Systems. All rights reserved.</p>
+          <p className="footer-copy">© 2026 ClawRobo Precision Systems. All rights reserved.</p>
         </div>
       </footer>
     </div>
