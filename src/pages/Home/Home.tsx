@@ -197,23 +197,6 @@ const Home = () => {
               Build, deploy, and monetize robotic Skills in a decentralized ecosystem.
             </p>
 
-            <div className="contact-meta">
-              <div className="contact-item">
-                <span className="contact-icon">✉</span>
-                <div>
-                  <p className="contact-label">Inquiries</p>
-                  <p className="contact-value">clawrobo.busi@gmail.com</p>
-                </div>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <div>
-                  <p className="contact-label">Headquarters</p>
-                  <p className="contact-value">Robotics District, San Francisco, CA</p>
-                </div>
-              </div>
-            </div>
-
             <ul className="contact-bullets">
               <li>Create and publish Skills with Claw SDK</li>
               <li>Deploy across real-world robots</li>

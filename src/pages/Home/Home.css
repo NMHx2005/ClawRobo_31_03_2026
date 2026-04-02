@@ -529,10 +529,11 @@
 .contact-subtitle {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 16px;
   color: #3d4a43;
   line-height: 22px;
   margin-bottom: 24px;
+  font-style: regular;
 }
 
 .contact-meta {
@@ -573,9 +574,10 @@
   gap: 12px;
   color: #546067;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 24px;
+  font-style: medium;
 }
 
 .contact-bullets li::before {
@@ -599,6 +601,7 @@
   color: #3d4a43;
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
 }
@@ -625,6 +628,7 @@
   font-size: 18px;
   line-height: 22px;
   color: #818181;
+  font-style: regular;
 }
 
 .contact-submit {
@@ -634,10 +638,12 @@
   background: linear-gradient(95deg, #006c4d 0%, #48d19f 100%);
   color: #ffffff;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  font-style: bold;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .site-footer {
@@ -901,6 +907,43 @@
     min-height: 0;
   }
 
+  .contact-left h2 {
+    font-size: 40px;
+    line-height: 42px;
+  }
+
+  .contact-subtitle {
+    font-size: 15px;
+    line-height: 21px;
+  }
+
+  .contact-value {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .contact-bullets {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .field-block input,
+  .field-block textarea {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .field-block input::placeholder,
+  .field-block textarea::placeholder {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .contact-submit {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
   .site-footer {
     height: auto;
     padding: 24px 0;
@@ -1118,20 +1161,23 @@
   }
 
   .contact-left h2 {
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 34px;
   }
 
   .contact-subtitle {
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .contact-value {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 21px;
   }
 
   .contact-bullets {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .contact-form {
@@ -1141,11 +1187,19 @@
 
   .field-block input,
   .field-block textarea {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .field-block input::placeholder,
+  .field-block textarea::placeholder {
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .contact-submit {
-    font-size: 16px;
+    font-size: 13px;
+    line-height: 18px;
   }
 
   .footer-links {
@@ -1185,5 +1239,35 @@
 
   .home-title {
     font-size: 34px;
+  }
+
+  .contact-left h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .contact-subtitle,
+  .contact-bullets,
+  .contact-value {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .field-block {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .field-block input,
+  .field-block textarea,
+  .field-block input::placeholder,
+  .field-block textarea::placeholder {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contact-submit {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
