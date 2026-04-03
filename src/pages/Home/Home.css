@@ -308,6 +308,7 @@
   line-height: 32px;
   color: #546067;
   margin-bottom: 24px;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -609,7 +610,8 @@
 }
 
 .contact-bullets li::before {
-  content: '\2022 ';
+  content: '\2022';
+  margin-right: 8px;
 }
 
 .contact-form {
@@ -712,7 +714,7 @@
 .footer-copy {
   color: #64748b;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   text-decoration: none;
   white-space: nowrap;
