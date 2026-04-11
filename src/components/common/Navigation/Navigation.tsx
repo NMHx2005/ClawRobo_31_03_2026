@@ -33,9 +33,13 @@ const Navigation = () => {
         >
           Dashboard
         </NavLink>
-        <a href="#" className="nav-link">
-          Marketplace (Coming Soon)
-        </a>
+        <NavLink
+          to="/marketplace"
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          Marketplace
+        </NavLink>
         <a href="#" className="nav-link">
           Docs
         </a>
@@ -49,9 +53,13 @@ const Navigation = () => {
         <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`} onClick={closeMenu}>
           Dashboard
         </NavLink>
-        <a href="#" className="nav-link" onClick={closeMenu}>
-          Marketplace (Coming Soon)
-        </a>
+        <NavLink
+          to="/marketplace"
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+          onClick={closeMenu}
+        >
+          Marketplace
+        </NavLink>
         <a href="#" className="nav-link" onClick={closeMenu}>
           Docs
         </a>

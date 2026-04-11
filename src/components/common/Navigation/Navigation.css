@@ -6,7 +6,7 @@
   max-width: 1040px;
   min-height: 87px;
   margin: 0 auto;
-  padding: 24px;
+  /* padding: 24px; */
   gap: 60px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(2px);
