@@ -19,7 +19,6 @@ export const MARKETPLACE_FILTER_TAGS = [
   'Engineering',
   'Executive',
   'General',
-  'HR',
 ] as const
 
 export const MARKETPLACE_SKILL_CARDS: MarketplaceSkillCard[] = [
