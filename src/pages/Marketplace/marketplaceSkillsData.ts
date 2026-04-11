@@ -14,11 +14,11 @@ export type MarketplaceSkillCard = {
 
 export const MARKETPLACE_FILTER_TAGS = [
   'All',
+  'Claw-Fold',
   'Claw-Pick',
+  'Claw-Sort',
+  'Claw-Care',
   'Claw-Inspect',
-  'Engineering',
-  'Executive',
-  'General',
 ] as const
 
 export const MARKETPLACE_SKILL_CARDS: MarketplaceSkillCard[] = [
