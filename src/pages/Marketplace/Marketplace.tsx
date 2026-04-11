@@ -19,7 +19,7 @@ const Marketplace = () => {
               Skill Marketplace
             </h1>
             <p className="marketplace-hero-subtitle">
-              Explore and expand your robot&apos;s capabilities through a world of skills
+              Step into a world of skills where your robot evolves continuously. Explore new capabilities, integrate advanced behaviors, and unlock the full potential of autonomous, real-world intelligence.
             </p>
           </div>
           <div className="marketplace-hero-visual">

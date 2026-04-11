@@ -14,6 +14,30 @@ function SearchIcon() {
   )
 }
 
+const STAR_PATH =
+  'M11.5912 4.0595C11.1198 3.09117 9.71382 3.09117 9.24248 4.0595L7.79603 7.03114L4.46614 7.46144C3.38107 7.60166 2.94659 8.91256 3.74035 9.65124L6.17629 11.9181L5.56476 15.1557C5.36548 16.2107 6.50297 17.0209 7.46489 16.5091L10.4168 14.9384L13.3688 16.5091C14.3307 17.0209 15.4682 16.2107 15.2689 15.1557L14.6574 11.9181L17.0933 9.65124C17.8871 8.91256 17.4526 7.60166 16.3675 7.46144L13.0376 7.03114L11.5912 4.0595Z'
+
+const STAR_GRAY = '#B8C0C6'
+const STAR_GOLD = '#FFB800'
+
+function SkillCardStar() {
+  const [active, setActive] = useState(false)
+
+  return (
+    <button
+      type="button"
+      className="skill-card-star-btn"
+      aria-label={active ? 'Remove from favorites' : 'Add to favorites'}
+      aria-pressed={active}
+      onClick={() => setActive((v) => !v)}
+    >
+      <svg className="skill-card-star-icon" width={20} height={20} viewBox="0 0 20 20" fill="none" aria-hidden>
+        <path d={STAR_PATH} fill={active ? STAR_GOLD : STAR_GRAY} />
+      </svg>
+    </button>
+  )
+}
+
 function matchesFilter(card: MarketplaceSkillCard, filter: string): boolean {
   if (filter === 'All') return true
   const direct = [
@@ -96,10 +120,7 @@ const MarketplaceSkills = () => {
                 <div className="skill-card-head">
                   <span className="skill-card-type">{card.tag}</span>
                   <div className="skill-card-rating">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.5912 4.0595C11.1198 3.09117 9.71382 3.09117 9.24248 4.0595L7.79603 7.03114L4.46614 7.46144C3.38107 7.60166 2.94659 8.91256 3.74035 9.65124L6.17629 11.9181L5.56476 15.1557C5.36548 16.2107 6.50297 17.0209 7.46489 16.5091L10.4168 14.9384L13.3688 16.5091C14.3307 17.0209 15.4682 16.2107 15.2689 15.1557L14.6574 11.9181L17.0933 9.65124C17.8871 8.91256 17.4526 7.60166 16.3675 7.46144L13.0376 7.03114L11.5912 4.0595Z" fill="#FFB800" />
-                    </svg>
-
+                    <SkillCardStar />
                     <span>{card.rating}</span>
                   </div>
                 </div>
