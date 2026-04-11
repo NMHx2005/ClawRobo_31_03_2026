@@ -20,7 +20,6 @@ export const MARKETPLACE_FILTER_TAGS = [
   'Executive',
   'General',
   'HR',
-  'Claw-Fold',
 ] as const
 
 export const MARKETPLACE_SKILL_CARDS: MarketplaceSkillCard[] = [
